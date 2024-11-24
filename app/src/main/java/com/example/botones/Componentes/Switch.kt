@@ -12,8 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.font.FontWeight
-import com.example.botones.ui.theme.FondoGrisOscuro
-import com.example.botones.ui.theme.LetraVerde
+import com.example.botones.ui.theme.Fondo
+import com.example.botones.ui.theme.Fuente
 
 @Composable
 fun CustomSwitch(
@@ -30,16 +30,16 @@ fun CustomSwitch(
             text = text,
             fontSize = 16.sp,
             fontWeight = FontWeight.Medium,
-            color = LetraVerde  // Texto en verde
+            color = Fuente  // Texto en verde
         )
         Spacer(modifier = Modifier.width(8.dp))
         Switch(
             checked = isChecked,
             onCheckedChange = onCheckedChange,
             colors = androidx.compose.material3.SwitchDefaults.colors(
-                checkedThumbColor = FondoGrisOscuro,
-                uncheckedThumbColor = FondoGrisOscuro,
-                checkedTrackColor = LetraVerde,
+                checkedThumbColor = Fondo,
+                uncheckedThumbColor = Fondo,
+                checkedTrackColor = Fuente,
                 uncheckedTrackColor = Color.Gray
             )
         )

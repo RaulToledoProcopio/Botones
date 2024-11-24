@@ -9,8 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.botones.ui.theme.FondoGrisOscuro
-import com.example.botones.ui.theme.LetraVerde
+import com.example.botones.ui.theme.Fondo
+import com.example.botones.ui.theme.Fuente
 
 @Composable
 fun Objetivos() {
@@ -30,7 +30,7 @@ fun Objetivos() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(FondoGrisOscuro)
+            .background(Fondo)
     ) {
         Column(
             modifier = Modifier
@@ -43,7 +43,7 @@ fun Objetivos() {
                 text = "Control de Objetivos",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
-                color = LetraVerde,
+                color = Fuente,
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )
 
@@ -103,7 +103,7 @@ fun Objetivos() {
                     text = if (resultadoTexto.isEmpty()) "" else "Resultado: $resultadoTexto",
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Normal,
-                    color = LetraVerde
+                    color = Fuente
                 )
             }
         }

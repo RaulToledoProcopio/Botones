@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.botones.ui.theme.LetraVerde
+import com.example.botones.ui.theme.Fuente
 
 @Composable
 fun CheckboxWithLabel(text: String, checked: Boolean, onCheckedChange: (Boolean) -> Unit) {
@@ -26,7 +26,7 @@ fun CheckboxWithLabel(text: String, checked: Boolean, onCheckedChange: (Boolean)
             checked = checked,
             onCheckedChange = onCheckedChange,
             colors = CheckboxDefaults.colors(
-                checkedColor = LetraVerde,
+                checkedColor = Fuente,
                 uncheckedColor = Color.Gray,
                 checkmarkColor = Color.White
             )
@@ -36,7 +36,7 @@ fun CheckboxWithLabel(text: String, checked: Boolean, onCheckedChange: (Boolean)
             text = text,
             fontSize = 16.sp,
             fontWeight = FontWeight.Medium,
-            color = LetraVerde
+            color = Fuente
         )
     }
 }
